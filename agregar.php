@@ -4,9 +4,17 @@
 	$obj= new crud();
 
 	$datos=array(
+		$_POST['nombre_tramito'],
+		$_POST['curp'],
 		$_POST['nombre'],
-		$_POST['anio'],
-		$_POST['empresa']
+		$_POST['apellido_P'],
+		$_POST['apellido_M'],
+		$_POST['telefono'],
+		$_POST['celular'],
+		$_POST['correo'],
+		$_POST['nivel'],
+		$_POST['municipio'],
+		$_POST['asunto']
 				);
 
 	echo $obj->agregar($datos);
